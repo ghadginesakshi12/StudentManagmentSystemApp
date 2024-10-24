@@ -10,4 +10,6 @@ import edu.cjc.smsapp.app.model.Student;
 public interface StudentRepositary  extends JpaRepository<Student,Integer>
 {
 public List<Student> findAllByBatchNumber(String batchNumber);
+
+public Student findByStudentEmailAndStudentContact(String username, String password);
 }
